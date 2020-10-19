@@ -1,33 +1,17 @@
 // Disseny de la maquetació de l'App TRIVIO
 // Establir les zones comunes entre pantalles.
 
-float marginH = 20,
-      marginV = 20;
-
-float sidebarWidth  = 300, 
-      sidebarHeight = 740;
-
-float logoWidth  = 300, 
-      logoHeight = 300;
-      
-float bannerWidth  = 1580, 
-      bannerHeight = 300;
-      
-float columnWidth  = 300,
-      columnHeight = 500;
-
 void setup(){
   fullScreen();
   noStroke();
+  textAlign(CENTER);
+  textSize(18);
 }
-
 
 void draw(){
   
   background(55);
-  
-  /*
-  
+   
   // Zona Principal
   fill(200);
   rect(marginH, marginV, width - marginH*2, height - marginV*2);
@@ -35,21 +19,36 @@ void draw(){
   // Zona Logo
   fill(200,50,100);
   rect(marginH, marginV, logoWidth, logoHeight);
+  fill(0);
+  text("LOGO", marginH + logoWidth/2, marginV + logoHeight/2);
   
-  // Zona Botons
+  // Zona Sidebar
   fill(50,200,100);
-  rect(marginH, marginV + logoHeight, sidebarWidth, sidebarHeight);
+  rect(marginH, 2*marginV + logoHeight, sidebarWidth, sidebarHeight);
+  fill(0);
+  text("SIDEBAR", marginH + sidebarWidth/2, marginV + logoHeight + sidebarHeight/2);
   
   // Zona Banner
-  fill(200, 200, 50);
-  rect(marginH + logoWidth, marginV , bannerWidth, bannerHeight);
+  fill(240, 100, 50);
+  rect(2*marginH + logoWidth, marginV, bannerWidth, bannerHeight);
+  fill(0);
+  text("BANNER", marginH + logoWidth + bannerWidth/2, marginV + bannerHeight/2);
   
-  // Zona Columna 1
-  fill(200, 200, 50);
-  rect(2*marginH + sidebarWidth, 2*marginV + bannerWidth, columnWidth, columnHeight);
   
-  */
-  fill(255,0,0); stroke(0);
-  ellipse(2*marginH + sidebarWidth, 2*marginV + bannerWidth, 50, 50);
+  // Zona Columnes 1, 2 i 3
+  fill(200, 200, 50);
+  rect(2*marginH + sidebarWidth, 2*marginV + bannerHeight, columnWidth, columnHeight);
+  fill(0);
+  text("COLUMN 1", 2*marginH + sidebarWidth +columnWidth/2, 2*marginV + bannerHeight + columnHeight/2);
+  
+  fill(200, 200, 50);
+  rect(3*marginH + sidebarWidth + columnWidth, 2*marginV + bannerHeight, columnWidth, columnHeight);
+  fill(0);
+  text("COLUMN 2", 3*marginH + sidebarWidth + columnWidth +columnWidth/2, 2*marginV + bannerHeight + columnHeight/2);
+  
+  fill(200, 200, 50);
+  rect(4*marginH + sidebarWidth + 2*columnWidth, 2*marginV + bannerHeight, columnWidth, columnHeight);
+  fill(0);
+  text("COLUMN 3", 4*marginH + sidebarWidth + 2*columnWidth +columnWidth/2, 2*marginV + bannerHeight + columnHeight/2);
   
 }
