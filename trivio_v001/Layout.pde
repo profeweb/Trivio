@@ -4,7 +4,7 @@ float marginH = 20,
 
 // Dimensions Zona Lateral
 float sidebarWidth  = 300, 
-      sidebarHeight = 700;
+      sidebarHeight = 720;
 
 // Dimensions Logo
 float logoWidth  = 300, 
@@ -15,5 +15,5 @@ float bannerWidth  = 1560,
       bannerHeight = 300;
       
 // Dimensions Columnes
-float columnWidth  = 500,
-      columnHeight = 700;
+float columnWidth  = 505,
+      columnHeight = 720;
