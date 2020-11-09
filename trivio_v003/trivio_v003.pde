@@ -1,17 +1,18 @@
-// Disseny de les pantalles de l'App Trivio
+// Disseny de les pantalles de l'App Trivio v1.3
 
-int numPantalla = 1;
+int numPantalla = 1;  // Número de la Pantalla Actual
 
 void setup(){
-  fullScreen();
-  noStroke();
-  textAlign(CENTER);
-  textSize(18);
+  fullScreen();            // Pantalla completa
+  //size(1920, 1080);      // Pantalla HD
+  noStroke();              // Sense bordes
+  textAlign(CENTER);       // Alineació del text
+  textSize(18);            // Mida del text
 }
 
 void draw(){
   
-  background(55);
+  background(55);    // Color del fons
   
   switch(numPantalla){
     case 1: dibuixaPantalla01(); break;
@@ -24,6 +25,7 @@ void draw(){
   text("X: "+mouseX+", Y:"+mouseY, width-100, 100);
 }
 
+// Canvi de Pantalla amb tecles UP i DOWN
 void keyPressed(){
   if(keyCode==UP){
     numPantalla++;

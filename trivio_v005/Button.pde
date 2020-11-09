@@ -1,11 +1,15 @@
+// Classe Botó
+
 class Button {
-  
+ 
+ // Propietats d'un botó
  float x, y, w, h;
  color fillColor, strokeColor;
  color fillColorOver, fillColorDisabled;
  String textBoto;
  boolean enabled;
  
+ // Mètode Constructor
  Button(String text, float x, float y, float w, float h){
    this.textBoto = text;
    this.x = x;
@@ -19,10 +23,13 @@ class Button {
    strokeColor = color(0);
  }
  
+ // Setters
+ 
  void setEnabled(boolean b){
    this.enabled = b;
  }
  
+  // Dibuixa el botó
  void display(){
    if(!enabled){
      fill(fillColorDisabled);
@@ -40,6 +47,7 @@ class Button {
    text(textBoto, this.x + this.w/2, this.y + this.h/2 + 10);
  }
  
+ // Indica si el cursor està sobre el botó
  boolean mouseOverButton(){
    return (mouseX >= this.x) && 
           (mouseX<=this.x + this.w) && 

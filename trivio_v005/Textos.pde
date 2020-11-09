@@ -1,6 +1,4 @@
-/*
-  Conjunt de Textos utilitzats en l'App.
-*/
+// Conjunt de Textos utilitzats en l'App.
 
 // Textos Botons
 String textBotoJugar     = "Jugar";

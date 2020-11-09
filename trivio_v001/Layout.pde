@@ -1,3 +1,7 @@
+// APP LAYOUT 
+// Valors de posicionament de blocs
+
+
 // Marges Horitzontal i Vertical
 float marginH = 20,
       marginV = 20;

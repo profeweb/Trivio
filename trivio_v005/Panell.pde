@@ -1,10 +1,14 @@
+// Classe Panell
+
 class Panell {
-  
+
+ // Propietats d'un panell
  float x, y, w, h;
  color fillColor, strokeColor;
  String titolPanell, textPanell;
  PShape icona;
  
+ // Constructor de Panell
  Panell(String titol, String text, float x, float y, float w, float h){
    this.titolPanell = titol;
    this.textPanell = text;
@@ -17,11 +21,14 @@ class Panell {
    this.icona = null;
  }
  
+ // Setters
+ 
  void setIcona(String img){
    this.icona = loadShape(img);
  }
  
  
+ // Dibuixa el panell
  void display(){
    
    fill(fillColor);

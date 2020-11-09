@@ -1,16 +1,17 @@
-// Disseny de la maquetació de l'App TRIVIO
+// Disseny de la maquetació de l'App TRIVIO v1.2
 // Establir les zones comunes entre pantalles.
 
 void setup(){
-  fullScreen();
-  noStroke();
-  textAlign(CENTER);
-  textSize(18);
+  fullScreen();            // Pantalla completa
+  //size(1920, 1080);      // Pantalla HD
+  noStroke();              // Sense bordes
+  textAlign(CENTER);       // Alineació del text
+  textSize(18);            // Mida del text
 }
 
 void draw(){
   
-  background(55);
+  background(55);          // Color del fons
      
   dibuixaZonaLogo();
   dibuixaSideBar();
@@ -23,5 +24,6 @@ void draw(){
   else {
     dibuixaColumna12();
   }
+  
   dibuixaColumna3();
 }

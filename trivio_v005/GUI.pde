@@ -1,14 +1,21 @@
+// Configuració dels Elements de la GUI
+// Botons, Panells, Desplegables, 
 
+// Botons del Menú Principal
 Button bJugar, bPunts, bPreguntes, bConfig, bSobre;
+// Dimensions dels botons
 int buttonH = 100, buttonW = 300;
 
+// Panell d'informació a la pantalles Sobre
 Panell pSobre;
 
+// Creació dels elements de la GUI
 void setGUI(){
   initButtons();
   initPanells();
 }
 
+// Creació dels botons de la GUI
 void initButtons(){
   bJugar     = new Button(textBotoJugar, 2*marginH, 360, buttonW, buttonH);
   bPunts     = new Button(textBotoPunts, 2*marginH, 360 + buttonH + 2* marginV, buttonW, buttonH);
@@ -17,6 +24,7 @@ void initButtons(){
   bSobre     = new Button(textBotoSobre, 2*marginH, 360 + 4*buttonH + 8*marginV, buttonW, buttonH);
 }
 
+// Activar els botons del menú
 void enableButtons(){
   bJugar.setEnabled(true);
   bPunts.setEnabled(true);
@@ -25,6 +33,7 @@ void enableButtons(){
   bSobre.setEnabled(true);
 }
 
+// Creació dels panells de la GUI
 void initPanells(){
   pSobre = new Panell(titolPanellInfo, textPanellInfo, 380, 360, 650, 660);
   pSobre.setIcona("../DATA/imgs/bombeta.svg");
