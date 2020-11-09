@@ -2,8 +2,8 @@
 // Establir les zones comunes entre pantalles.
 
 void setup(){
-  fullScreen();                       // Pantalla completa
-  //size(1920, 1080);                 // Pantalla HD
+  //fullScreen();                       // Pantalla completa
+  size(1800, 1080);                 // Pantalla HD
   noStroke();                         // Sense bordes
   textAlign(CENTER); textSize(18);   // Alineació i mida del text
 }
@@ -50,5 +50,7 @@ void draw(){
   rect(4*marginH + sidebarWidth + 2*columnWidth, 2*marginV + bannerHeight, columnWidth, columnHeight);
   fill(0);
   text("COLUMN 3", 4*marginH + sidebarWidth + 2*columnWidth +columnWidth/2, 2*marginV + bannerHeight + columnHeight/2);
+  
+  println("X: "+mouseX+", Y:"+mouseY);
   
 }
