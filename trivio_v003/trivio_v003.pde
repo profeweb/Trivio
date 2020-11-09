@@ -20,6 +20,8 @@ void draw(){
   
   fill(255);
   text("PANTALLA "+numPantalla, width-100, 50);
+  
+  text("X: "+mouseX+", Y:"+mouseY, width-100, 100);
 }
 
 void keyPressed(){
