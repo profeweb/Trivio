@@ -1,12 +1,14 @@
 // Elements Multimèdia de l'APP
 // Imatges, tipografies, sons, ...
-// Elements Multimèdia de l'App
-// Imatges, fonts, àudios, ...
+
+import processing.sound.*;
 
 // Imatges
 PImage imgLogo, imgFons;
 // Tipografies
 PFont font1, font2, font3;
+// Audios
+SoundFile audio1, audio2, audio3;
 
 // Càrrega dels elements multimèdia
 void loadMedia(){
@@ -30,4 +32,7 @@ void loadFonts(){
 
 // Càrrega dels àudios
 void loadSounds(){
+  audio1 = new SoundFile(this, "../DATA/audios/click.wav");
+  audio2 = new SoundFile(this, "../DATA/audios/encert.wav");
+  audio3 = new SoundFile(this, "../DATA/audios/error.wav");
 }
