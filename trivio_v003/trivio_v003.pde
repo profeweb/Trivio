@@ -14,9 +14,11 @@ void draw(){
   
   background(55);    // Color del fons
   
-  switch(numPantalla){
-    case 1: dibuixaPantalla01(); break;
-    case 2: dibuixaPantalla02(); break;
+  if(numPantalla==1){
+    dibuixaPantalla01();
+  }
+  else if(numPantalla == 2){
+    dibuixaPantalla02();
   }  
   
   fill(255);
