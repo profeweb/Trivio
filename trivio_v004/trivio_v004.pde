@@ -3,6 +3,7 @@
 
 // Enumerat de les Pantalles de l'APP
 enum PANTALLA {INICI, JUGAR, PUNTS, SOBRE, PREGUNTES, CONFIG};
+
 // Pantalla actual
 PANTALLA pantalla = PANTALLA.INICI;
 
@@ -37,19 +38,24 @@ void mousePressed(){
   
   if(bJugar.mouseOverButton() && bJugar.enabled){
     pantalla = PANTALLA.JUGAR;
+    audio1.play();
   }
   else if(bPunts.mouseOverButton() && bPunts.enabled){
     println("Pantalla Punts");
     pantalla = PANTALLA.PUNTS;
+    audio1.play();
   }
   else if(bPreguntes.mouseOverButton() && bPreguntes.enabled){
     pantalla = PANTALLA.PREGUNTES;
+    audio1.play();
   }
   else if(bConfig.mouseOverButton() && bConfig.enabled){
     pantalla = PANTALLA.CONFIG;
+    audio1.play();
   }
   else if(bSobre.mouseOverButton() && bSobre.enabled){
     pantalla = PANTALLA.SOBRE;
+    audio1.play();
   }
 }
 
