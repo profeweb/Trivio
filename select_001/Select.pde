@@ -53,6 +53,10 @@ class Select {
     this.collapsed = b;
   }
   
+  void toggle(){
+    this.collapsed = !this.collapsed;
+  }
+  
   
   void update(){
     int option = clickedOption();

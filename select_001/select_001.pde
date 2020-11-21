@@ -1,5 +1,5 @@
 // Components de la GUI
-// Selects
+// Select Desplegable
 
 // Selects de la GUI
 Select s1, s2;
@@ -47,24 +47,26 @@ void draw(){
 // En cas de pitjar el ratolí
 void mousePressed(){
   
+  // Si pitjam sobre el select 1
   if(s1.mouseOverSelect() && s1.enabled){
     if(!s1.collapsed){
-      s1.update();
-      updateColor();
+      s1.update();      // Actualitzar valor
+      updateColor();    // Fer acció amb valor
     }
-    s1.collapsed = !s1.collapsed;
+    s1.toggle();        // Plegar o desplegar
   }
   
+  // Si pitjam sobre el select 2
   if(s2.mouseOverSelect() && s2.enabled){
     if(!s2.collapsed){
-      s2.update();
-      updateNumber();
+      s2.update();      // Actualitzar valor
+      updateNumber();   // Fer acció amb valor
     }
-    s2.collapsed = !s2.collapsed;
+    s2.toggle();        // Plegar o desplegar
   }
 }
 
-// Modifica el color
+// Modifica el color segons Select 1
 void updateColor(){
   if(s1.selectedValue=="RED"){
     bgColor = color(255, 0, 0);
@@ -77,22 +79,13 @@ void updateColor(){
   }
 }
 
+// Modificar el número segons Select 2
 void updateNumber(){
-  if(s2.selectedValue=="1"){
-    n = 1;
-  }
-  else if(s2.selectedValue=="2"){
-    n = 2;
-  }
-  else if(s2.selectedValue=="3"){
-    n = 3;
-  }
-  
+  n = Integer.parseInt(s2.selectedValue);
 }
 
  // Modifica el cursor
 void updateCursor(){
-  
   if((s1.mouseOverSelect() && s1.enabled)||
      (s2.mouseOverSelect() && s2.enabled)){
       cursor(HAND);
