@@ -5,9 +5,6 @@ class ImageButton {
  // Propietats d'un botó:
  float x, y, w, h;  // Posició i dimensions
  
- // Colors de contorn, farciment, actiu i desactiu
- color fillColor, strokeColor, fillColorOver, fillColorDisabled;
- 
  PImage img, imgOver, imgDisabled;  // Imatges del botó
  
  boolean enabled;   // Abilitat / desabilitat
@@ -22,10 +19,6 @@ class ImageButton {
    this.w = w;
    this.h = h;
    this.enabled = true;
-   fillColor = color(155, 155, 55);
-   fillColorOver = color(255, 255, 55);
-   fillColorDisabled = color(150);
-   strokeColor = color(0);
  }
  
  // Setters
