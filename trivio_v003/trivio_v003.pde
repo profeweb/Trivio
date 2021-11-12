@@ -21,10 +21,11 @@ void draw(){
     dibuixaPantalla02();
   }  
   
-  fill(255);
-  text("PANTALLA "+numPantalla, width-100, 50);
-  
-  text("X: "+mouseX+", Y:"+mouseY, width-100, 100);
+  pushStyle();
+    fill(255); textSize(36); textAlign(RIGHT);
+    text("PANTALLA "+numPantalla, width-50, 60);
+    text("X: "+mouseX+", Y:"+mouseY, width-50, 100);
+  popStyle();
 }
 
 // Canvi de Pantalla amb tecles UP i DOWN
