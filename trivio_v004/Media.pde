@@ -33,6 +33,6 @@ void loadFonts(){
 // Càrrega dels àudios
 void loadSounds(){
   audio1 = new SoundFile(this, "../DATA/audios/click.wav");
-  audio2 = new SoundFile(this, "../DATA/audios/encert.wav");
+  audio2 = new SoundFile(this, "../DATA/audios/correcte.wav");
   audio3 = new SoundFile(this, "../DATA/audios/error.wav");
 }

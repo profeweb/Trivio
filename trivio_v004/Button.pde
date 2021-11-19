@@ -31,6 +31,7 @@ class Button {
  
  // Dibuixa el botó
  void display(){
+   pushStyle();
    if(!enabled){
      fill(fillColorDisabled);
    }
@@ -45,6 +46,7 @@ class Button {
    
    fill(0); textAlign(CENTER); textSize(20); textFont(font1);
    text(textBoto, this.x + this.w/2, this.y + this.h/2 + 10);
+   popStyle();
  }
  
  // Indica si el cursor està sobre el botó
