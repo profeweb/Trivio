@@ -1,5 +1,3 @@
-// Objectes de la classe Cercle
-Cercle c1, c2, c3;
 
 void setup(){
   // Dimensions de l'App
@@ -27,5 +25,8 @@ void draw(){
   fill(55, 0, 0);
   textFont(getThirdFont());
   text("Paràgraf de l'App", 50, 300);
+  
+  
+  displayFonts(100, 400, 50);
   
 }

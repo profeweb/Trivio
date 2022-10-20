@@ -39,14 +39,10 @@ void setFonts(){
   
   // Dibuixa les font de l'App
   void displayFonts(float x, float y, float h){
-    pushStyle();
-      //Llegenda
-      fill(0); textAlign(LEFT); textSize(36);
-      text("Fonts de l'App:", x, y-10);
-      
-      // Fonts
+    pushStyle();     
       for(int i=0; i<getNumFonts(); i++){
         fill(0); stroke(0); strokeWeight(3);
+        textFont(getFontAt(i));
         text("Tipografia "+i, x, y + i*h);
       }
     popStyle();
