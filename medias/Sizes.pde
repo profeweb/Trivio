@@ -1,3 +1,3 @@
 // Fitxer amb informació de Mides d'objectes de la GUI
-float midaIcona = 50;
-float midaLogo = 200;
+float midaIcona = 100;
+float midaLogo  = 200;
