@@ -4,9 +4,11 @@ class Button {
   
  // Propietats d'un botó:
  float x, y, w, h;  // Posició i dimensions
+ 
  // Colors de contorn, farciment, actiu i desactiu
  color fillColor, strokeColor;
  color fillColorOver, fillColorDisabled;
+ 
  String textBoto;  // Text
  boolean enabled;  // Abilitat / desabilitat
  
@@ -32,7 +34,7 @@ class Button {
  
  // Dibuixa el botó
  void display(){
-   
+   pushStyle();
    if(!enabled){
      fill(fillColorDisabled);  // Color desabilitat
    }
@@ -48,6 +50,7 @@ class Button {
    // Text (color, alineació i mida)
    fill(0); textAlign(CENTER); textSize(20);
    text(textBoto, this.x + this.w/2, this.y + this.h/2 + 10);
+   popStyle();
  }
  
  // Indica si el cursor està sobre el botó

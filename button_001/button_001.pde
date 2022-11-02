@@ -1,5 +1,4 @@
-// Components de la GUI
-// Botons
+// Components de la GUI - Botons
 
 // Botons de la GUI
 Button b1, b2, b3, b4;
@@ -43,12 +42,15 @@ void draw(){
 // En cas de pitjar el ratolí
 void mousePressed(){
   
+  // Si pitjam sobre el boto b1 i està abilitat
   if(b1.mouseOverButton() && b1.enabled){
     bgColor = color(255, 0, 0);
   }
+  // Si pitjam sobre el boto b2 i està abilitat
   else if(b2.mouseOverButton() && b2.enabled){
     bgColor = color(0, 255, 0);
   }
+  // Si pitjam sobre el boto b3 i està abilitat
   else if(b3.mouseOverButton() && b3.enabled){
     bgColor = color(0, 0, 255);
   }
@@ -58,6 +60,7 @@ void mousePressed(){
 // Modifica el cursor
 void updateCursor(){
   
+  // Si està sobre algun botó (b1, b2 o b3) i està abilitat
   if((b1.mouseOverButton() && b1.enabled)||
      (b2.mouseOverButton() && b2.enabled)||
      (b3.mouseOverButton() && b3.enabled)){

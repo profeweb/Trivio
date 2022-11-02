@@ -1,8 +1,9 @@
 // Configuració dels Elements de la GUI
-// Botons, Desplegables, 
+// Botons, ...
 
 // Botons del Menú Principal
 Button bJugar, bPunts, bPreguntes, bConfig, bSobre;
+
 // Dimensions dels botons
 int buttonH = 100, buttonW = 300;
 
