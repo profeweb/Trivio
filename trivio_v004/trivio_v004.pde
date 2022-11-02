@@ -29,6 +29,8 @@ void draw(){
     case SOBRE: dibuixaPantallaSobre(); break;
   } 
   
+  text(pantalla.name(), width/2, height/2);  // Nom Pantalla
+  
   updateCursor();   // Modifica l'aparença del cursor
   
 }
